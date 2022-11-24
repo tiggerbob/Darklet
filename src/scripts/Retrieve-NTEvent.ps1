@@ -1,0 +1,1 @@
+Get-EventLog -LogName Security -InstanceID 4656 | Select-Object -Property TimeGenerated, Message | Where Message -like "*HONEYPOT*" | Where Message -notlike "*C:\Windows\explorer.exe*" | Where Message -notlike "*C:\Windows\System32\notepad.exe*"| Where Message -notlike "*C:\Windows\System32\smartscreen.exe*"
