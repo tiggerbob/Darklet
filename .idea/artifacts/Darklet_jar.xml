@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="Darklet:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/Darklet_jar</output-path>
-    <root id="archive" name="Darklet.jar">
-      <element id="module-output" name="Darklet" />
-    </root>
-  </artifact>
-</component>

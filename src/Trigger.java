@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 public class Trigger extends Thread {
     static String command = "powershell.exe C:\\Users\\Teagan.TEAGAN-9I\\Desktop\\Darklet\\src\\scripts\\Retrieve-NTEvent.ps1";
 
-    static void logEvents() throws IOException{
+    static void logEvents() throws IOException {
         Process powerShellProcess = Runtime.getRuntime().exec(command);
 
         powerShellProcess.getOutputStream().close();
@@ -24,7 +24,7 @@ public class Trigger extends Thread {
     }
 
     public static void main(String[] args) throws IOException, InterruptedException {
-        while(true) {
+        while (true) {
             logEvents();
             sleep(2000);
         }
