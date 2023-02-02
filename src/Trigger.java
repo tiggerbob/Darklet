@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Trigger extends Thread {
-    static String command = "powershell.exe C:\\Users\\Teagan.TEAGAN-9I\\Desktop\\Darklet\\src\\scripts\\Retrieve-NTEvent.ps1";
+    static String command = "powershell.exe C:\\Users\\REDACTED";
 
     static void logEvents() throws IOException {
         Process powerShellProcess = Runtime.getRuntime().exec(command);
